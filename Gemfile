@@ -5,8 +5,10 @@ ruby '2.0.0'
 gem 'rails', '4.0.5'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'bcrypt-ruby', '3.1.2'
 
 gem 'pg', '0.15.1'
+
 
 group :development, :test do
 	gem 'guard-rspec', '2.5.0'
@@ -14,6 +16,10 @@ group :development, :test do
   	gem 'spork-rails', '4.0.0'
   	gem 'guard-spork', '1.5.0'
   	gem 'childprocess', '0.3.6'
+end
+
+group :development do
+	gem 'annotate','~>2.4.1.beta'
 end
 
 group :test do
